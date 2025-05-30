@@ -41,6 +41,6 @@ I have included all the code:
 ## **Building and Running**
 
 * **Build the Project using the code:** I would suggest creating a new Visual Studio project and integrating the code to the project (code.cs, code.Designer.cs)
-* **Run the executable:** THe executable is compressed in to three parts and require zero installation or requirements to run.
+* **Run the executable:** The executable is compressed in to three parts and require zero installation or requirements to run.
 
 ## **Disclaimer:** Use this software at your own risk. Always back up your important files before processing.
