@@ -18,8 +18,21 @@ I have included all the code:
 * **File Statistics:** Displays the number of files added and their total size.  
 * **Progress Bar:** Visual feedback on the processing progress.  
 * **Help Section:** Built-in help message explaining how to use the application.
+* *(Note: Features like Compression and Multithreading are present in the UI but does not work currently.)*
 
-*(Note: Features like Compression and Multithreading are present in the UI but does not work currently.)*
+## **Cryptography**
+-   **Primitives:**
+    -   **Key Derivation:** Uses **Argon2id**, a robust algorithm designed to resist brute-force attacks on passwords.
+    -   **Encryption:** Employs **AES-256 in Galois/Counter Mode (AES-GCM)**, provides both confidentiality and integrity/authentication.
+        
+-   **Parameters:**
+    -   **AES Key Size:** 256-bit.
+    -   **Nonce (IV) Size:** 12 bytes, which is the recommended size for AES-GCM.
+    -   **Authentication Tag Size:** 16 bytes, providing strong integrity checks.
+        
+-   **Additions:**
+    -   **Memory Clearing:** Attempts to clear sensitive byte arrays from memory after use..
+    -   **Secure Delete:** The `SecureDelete` function attempts to overwrite files multiple times before deletion, aiming to prevent recovery of original data.
 
 ## **How to Use**
 
@@ -29,7 +42,7 @@ I have included all the code:
    * **Password:** You will be prompted to enter and confirm a password (for encryption) or enter the password (for decryption).  
    * **Key:** For encryption, a key file (.key) will be generated. For decryption, you will need to select the previously generated key file.  
 4. **Select Options:** Check the boxes for desired options like 'Logging' or 'Secure Delete'.  
-5. **Execute:** Click the 'Execute' button to start the process.
+5. **Execute:** Starts the Encryption/decryption process.
 
 ## **Important Notes**
 
